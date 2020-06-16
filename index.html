@@ -3,7 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon-32x32.png" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,14 +10,14 @@
 </head>
 <body>
 
-    <button onclick="topFunction()" id="backtoTopbtn" title="Go to top">Back To Top</button>
+<button onclick="topFunction()" id="backtoTopbtn" title="Go to top">Back To Top</button>
    
 <div class="musicheader">
   <p class="headertext"> Matthew Musicals</p>
 </div>
 
   <div class="topmenu" id="mytopmenu">
-    <a href="#home">Home</a>
+    <a href="#maincontent">Home</a>
     <a href="#productcategories">Our Products</a>
     <a href="#ContactVisit">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -26,7 +25,7 @@
     </a>
   </div>
   
-  <div class="main">
+  <div class="main" id="maincontent">
 
       <h1 style="font-size: 54.5455px;font-family:cursive;" class="">
           Hey, 
@@ -48,39 +47,44 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
       </ol>
     
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
-        <div class="item active">
+          <div class="item active">
+              <img src="images/offerpage.jpg" alt="offer" style="width:100%;height:100%;">
+            </div>
+        <div class="item">
           <img src="images/pic1.jpg" alt="guitar" style="width:100%;">
           <div class="carousel-caption">
-            <h3>Los Angeles</h3>
-            <p>LA is always so much fun!</p>
+            <h3>Guitar</h3>
+            <p>Go Where the Guitar takes you</p>
           </div>
         </div>
     
         <div class="item">
           <img src="images/pic2.jpg" alt="piano" style="width:100%;">
           <div class="carousel-caption">
-            <h3>Chicago</h3>
-            <p>Thank you, Chicago!</p>
+            <h3>Piano</h3>
+            <p>The piano keys are balck and white, but they sound like a million colors in your mind</p>
           </div>
         </div>
     
         <div class="item">
           <img src="images/pic3.webp" alt="Drums" style="width:100%;">
           <div class="carousel-caption">
-            <h3>New York</h3>
-            <p>We love the Big Apple!</p>
+            <h3>Drums</h3>
+            <p>Dance to the beat of your own drum</p>
           </div>
         </div>
 
         <div class="item">
             <img src="images/pic4.jpg" alt="violin" style="width:100%;">
             <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
+              <h3>Violink</h3>
+              <p>I know that the most joy in my life has come to me from my Violin</p>
+              <p> - ALBERT EINSTEIN</p>
             </div>
           </div>
       </div>
@@ -106,16 +110,16 @@
         <div class="column">
           <div class="overlaytext">
           <img src="images/guitar1.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">Gibson Les Paul Standard '50s Electric Guitar Gold Top</div>
-             </div>
+             
             </div>
             <div class="overlaytext" style="margin-top: 58px;">
           <img src="images/guitar2.png" style="width:100%" class="image">
           
-          <div class="middle">
+          
             <div class="middletext">Gibson Les Paul Classic Electric Guitar</div>
-           </div>
+           
           </div>
          
         </div>
@@ -123,50 +127,50 @@
 
             <div class="overlaytext">
           <img src="images/guitar3.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">
                   Epiphone Limited Edition Les Paul Custom PRO Electric Guitar</div>
-             </div>
+            
             </div>
           <div class="overlaytext" style="margin-top: 58px;">
           <img src="images/guitar4.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">
                   G&L Limited Edition Tribute ASAT Classic Bluesboy Electric Guitar</div>
-             </div>
+            
             </div>
           
         </div>  
         <div class="column">
             <div class="overlaytext">
             <img src="images/guitar5.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">
                     Epiphone Limited Edition 1966 G-400 PRO Electric Guitar</div>
-               </div>
+               
               </div>
             <div class="overlaytext" style="margin-top: 58px;">
             <img src="images/guitar6.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">Epiphone Les Paul Traditional PRO-III Electric Guitar</div>
-               </div>
+               
               </div>
     
           </div>
           <div class="column">
               <div class="overlaytext">
             <img src="images/guitar7.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">
                     Epiphone Limited Edition ES-335 PRO Electric Guitar</div>
-               </div>
+               
               </div>
             <div class="overlaytext" style="margin-top: 58px;">
             <img src="images/guitar8.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">
                     Gibson Firebird Studio Solid Body Electric Guitar</div>
-               </div>
+               
               </div>
             
           </div>  
@@ -178,17 +182,17 @@
         <div class="column">
           <div class="overlaytext">
           <img src="images/piano1.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">Williams Rhapsody 2 88-Key Console Digital Piano</div>
-             </div>
+             
             </div>
             <div class="overlaytext" style="margin-top: 58px;">
           <img src="images/piano2.png" style="width:100%" class="image">
           
-          <div class="middle">
+          
             <div class="middletext">
                 Williams Allegro III Digital Piano</div>
-           </div>
+           
           </div>
          
         </div>
@@ -196,50 +200,50 @@
 
             <div class="overlaytext">
           <img src="images/piano3.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">
                   Williams Overture 2 88-Key Console Digital Piano</div>
-             </div>
+             
             </div>
           <div class="overlaytext" style="margin-top: 58px;">
           <img src="images/piano4.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">
                   Suzuki MDG-330 Mini Grand Digital Piano</div>
-             </div>
+             
             </div>
           
         </div>  
         <div class="column">
             <div class="overlaytext">
             <img src="images/piano5.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">
                     Williams Black Stand for Williams Legato Digital Pianos</div>
-               </div>
+               
               </div>
             <div class="overlaytext" style="margin-top: 58px;">
             <img src="images/piano6.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">
                     Schoenhut 37-Key Traditional Deluxe Spinet Toy Piano</div>
-               </div>
+               
               </div>
     
           </div>
           <div class="column">
               <div class="overlaytext">
             <img src="images/piano7.png" style="width:100%;height:175px;" class="image">
-            <div class="middle">
+            
                 <div class="middletext">
                     Kawai KDP70 Digital Piano</div>
-               </div>
+               
               </div>
             <div class="overlaytext" style="margin-top: 58px;">
             <img src="images/piano4.png" style="width:100%;padding-top:65px;" class="image">
-            <div class="middle">
+            
                 <div class="middletext">Williams Rhapsody 2 88-Key Console Digital Piano</div>
-               </div>
+               
               </div>
             
           </div>  
@@ -251,18 +255,18 @@
         <div class="column">
           <div class="overlaytext">
           <img src="images/drums1.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">
                   Simmons SD350 Electronic Drum Kit with Mesh Pads</div>
-             </div>
+             
             </div>
             <div class="overlaytext" style="margin-top: 58px;">
           <img src="images/drums2.png" style="width:100%" class="image">
           
-          <div class="middle">
+          
             <div class="middletext">
                 Rogue 5-Piece Complete Drum Set</div>
-           </div>
+           
           </div>
          
         </div>
@@ -270,48 +274,48 @@
 
             <div class="overlaytext">
           <img src="images/drums3.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">
                   Simmons SD200 Electronic Drum Kit with Mesh Snare</div>
-             </div>
+             
             </div>
           <div class="overlaytext" style="margin-top: 58px;">
           <img src="images/drums4.png" style="width:100%" class="image">
-          <div class="middle">
+          
               <div class="middletext">Simmons SD600 Electronic Drum Set with Mesh Heads</div>
-             </div>
+             
             </div>
           
         </div>  
         <div class="column">
             <div class="overlaytext">
             <img src="images/drums5.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">
                     Sound Percussion Labs Lil Kicker - 3 Piece Jr Drum Set</div>
-               </div>
+               
               </div>
             <div class="overlaytext" style="margin-top: 58px;">
             <img src="images/drums6.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">
                     Sound Percussion Labs Kicker Pro 5-Piece Drum Set</div>
-               </div>
+               
               </div>
     
           </div>
           <div class="column">
               <div class="overlaytext">
             <img src="images/drums7.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">Sound Percussion Labs Kicker Pro 5-Piece Drum Set with stands</div>
-               </div>
+               
               </div>
             <div class="overlaytext" style="margin-top: 58px;">
             <img src="images/drums8.png" style="width:100%" class="image">
-            <div class="middle">
+            
                 <div class="middletext">Sound Percussion Labs Street Bop Birch Ply 4-Piece Shell</div>
-               </div>
+               
               </div>
             
           </div>  

@@ -8,14 +8,15 @@ This website has been developed using HTML,CSS,Bootstrap and basic javascript.
 
 # Features Implemented
 
+ * A favicon to be displayed in the browser tab.
  * A header text animation using animation/Keyframes.
- * A responsive top navigation menu
- * Bootstrap carousel for displaying gallery images and offers
+ * A responsive top navigation menu.
+ * Bootstrap carousel for displaying gallery images and offers.
  * Animated Collapsibles for displaying products.
  * Responsive disply of images inside the collapsibles.
  * Hover and Opacity CSS elements to display text on hovering over the images.
  * Footer with icons from font awesome and customized.
- * A back to top button
+ * A back to top button.
 
  # How to Run
 

@@ -156,21 +156,23 @@ animation: gradient 15s ease infinite;
 {
   background: url(musicbg.png);
   padding-left: 144px;
+  padding-bottom: 26px;
 }
 .collapsible {
-  background-color: #777;
+  background-color: #aa3232;
   color: white;
   cursor: pointer;
   padding: 18px;
   width: 85%;
   border: none;
+  height:100px;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 26px;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #f28907;
 }
 
 .collapsible:after {
@@ -181,7 +183,7 @@ animation: gradient 15s ease infinite;
   margin-left: 5px;
 }
 
-.active:after {
+.collapsible.active:after {
   content: "\2212";
 }
 
@@ -223,6 +225,14 @@ animation: gradient 15s ease infinite;
     flex: 50%;
     max-width: 50%;
   }
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    width: 535px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -240,4 +250,120 @@ animation: gradient 15s ease infinite;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
   }
+}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+}
+
+.overlaytext:hover .image {
+  opacity: 0.3;
+}
+
+.overlaytext:hover .middle {
+  opacity: 1;
+}
+
+.middle .text {
+  color: #cf241c;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 100px;
+  margin-left: 65px;
+  margin-top: -175px;
+}
+
+div.text {
+  word-break: break-all;
+}
+
+.btn-hldr {
+  padding-top: 58px;
+    padding-left: 184px;
+  text-align: center;
+  width: fit-content;
+  display: inline-block;
+}
+.btn-hldr .main-btn {
+  font-size: .8em;
+  text-align: center;
+  position: relative;
+  padding: .75em 2em .75em 3.5em;
+  color: #521010;
+  text-decoration: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-family: -webkit-pictograph;
+  font-size: 19px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.btn-hldr a:hover {
+  background-color: rgb(123, 255, 0);
+  color: black;
+}
+
+
+
+
+.btn-floating {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 47px;
+  height: 47px;
+}
+
+.special-color-dark {
+  background-color: #263238 !important;
+}
+.pt-4, .py-4 {
+  padding-top: 1.5rem !important;
+}
+.list-inline-item {
+  display: inline-block;
+}
+.btn-fb {
+  color: #fff;
+  padding-top: 14px;
+  background-color: #3b5998 !important;
+}
+
+.btn-fb i:hover
+{
+  background-color: rgb(233, 0, 0);
+}
+.btn-gplus {
+  padding-top: 14px;
+  background-color: #dd4b39 !important;
+}
+.btn-li {
+  padding-top: 14px;
+  background-color: #0082ca !important;
+}
+.btn-git {
+  padding-top: 14px;
+  background-color: white !important;
 }

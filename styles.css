@@ -187,7 +187,7 @@ animation: gradient 15s ease infinite;
   content: "\2212";
 }
 
-.content {
+.content1 {
   padding: 0 18px;
   max-height: 0;
   width: 965px;
@@ -218,23 +218,6 @@ animation: gradient 15s ease infinite;
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-    width: 535px;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
-  }
-}
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -242,7 +225,7 @@ animation: gradient 15s ease infinite;
     flex: 100%;
     max-width: 100%;
   }
-  .content {
+  .content1 {
     padding: 0 18px;
     max-height: 0;
     width: 383px;
@@ -250,6 +233,11 @@ animation: gradient 15s ease infinite;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
   }
+  .middletext
+  {
+    margin-left: 120px !important;
+  }
+  
 }
 
 
@@ -260,7 +248,7 @@ animation: gradient 15s ease infinite;
   backface-visibility: hidden;
 }
 
-.middle {
+.middletext {
   transition: .5s ease;
   opacity: 0;
 }
@@ -269,19 +257,19 @@ animation: gradient 15s ease infinite;
   opacity: 0.3;
 }
 
-.overlaytext:hover .middle {
+.overlaytext:hover .middletext {
   opacity: 1;
 }
 
-.middle .text {
+.middletext {
   color: #cf241c;
   font-style: italic;
   font-weight: bolder;
   font-size: 16px;
-  position: absolute;
   width: 100px;
   margin-left: 65px;
   margin-top: -175px;
+  visibility: inherit;
 }
 
 
@@ -312,8 +300,34 @@ animation: gradient 15s ease infinite;
   color: black;
 }
 
-
-
+@media screen and (max-width: 600px) {
+  .btn-hldr {
+    padding-top: 58px;
+    margin-left: -277px;
+    text-align: center;
+    width: fit-content;
+    display: inline-block;
+  }
+  .btn-hldr .main-btn {
+    font-size: .8em;
+    text-align: center;
+    position: relative;
+    padding: .75em 2em .75em 3.5em;
+    color: #521010;
+    text-decoration: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-family: -webkit-pictograph;
+    font-size: 19px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .btn-hldr a:hover {
+    background-color: rgb(123, 255, 0);
+    color: black;
+  }
+}
 
 .btn-floating {
   position: relative;
